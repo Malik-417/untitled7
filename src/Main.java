@@ -1,15 +1,43 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+        //Задача 1
+        // Целочисленный массив, заполненный цифрами 1,2,3 с помощью ключевого слова new
+        System.out.println("Task 1");
+        int[] a = new int[3];
+        a[0] = 1;
+        a[1] = 2;
+        a[2] = 3;
+        //Массив с числами — 1.57, 7.654, 9.986. Массив сразу заполните значениями.
+        System.out.println("Дробный массив");
+        double[] c = {1.57, 7.654, 9.986};
+        // Произвольный массив.
+        System.out.println("Произвольный массив");
+        String[] e = {"apple", "banana", "cherry"};
+
+
+        // Задача 2: Вывод массивов в прямом порядке
+        System.out.println("Task 2");
+        // Вывод целочисленного массива
+        System.out.println(Arrays.toString(a));
+        // Вывод массива дробных чисел
+        System.out.println(Arrays.toString(c));
+        // Вывод произвольного массива
+        System.out.println(Arrays.toString(e));
+
+
+        // Задача 3: Вывод массивов в обратном порядке
+        System.out.println("Task 3");
+        // Вывод целочисленного массива
+        for (int b = a.length - 1; b >= 0; b--) {
+            System.out.print(a[b] + ", ");
+        }
+
+        // Вывод произвольного массива
+        for (int d = c.length - 1; d >= 0; d--) {
+            System.out.print(c[d] + ", ");
         }
     }
 }
