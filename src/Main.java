@@ -1,5 +1,4 @@
 import java.util.Arrays;
-
 public class Main {
     public static void main(String[] args) {
 
@@ -18,7 +17,8 @@ public class Main {
         String[] e = {"apple", "banana", "cherry"};
 
 
-        // Задача 2: Вывод массивов в прямом порядке
+        // Задача 2:
+        // Вывод массивов в прямом порядке
         System.out.println("Task 2");
         // Вывод целочисленного массива
         System.out.println(Arrays.toString(a));
@@ -28,7 +28,8 @@ public class Main {
         System.out.println(Arrays.toString(e));
 
 
-        // Задача 3: Вывод массивов в обратном порядке
+        // Задача 3:
+        // Вывод массивов в обратном порядке
         System.out.println("Task 3");
         // Вывод целочисленного массива
         for (int b = a.length - 1; b >= 0; b--) {
@@ -39,5 +40,18 @@ public class Main {
         for (int d = c.length - 1; d >= 0; d--) {
             System.out.print(c[d] + ", ");
         }
+        for (int f = e.length - 1; f >= 0; f--) {
+            System.out.print(e[f] + ", ");
+        }
+
+        // Задача 4:
+        // Меняем нечетные на четные
+        System.out.println("Task 4");
+        for (int g=0; g < a.length; g++){
+            if (a[g]% 2!=0){
+                a[g]++;
+            }
+        }
+        System.out.println("Четный массив"+ Arrays.toString(a));
     }
 }
